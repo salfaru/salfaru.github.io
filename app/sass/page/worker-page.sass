@@ -1,0 +1,294 @@
+@import "../base"
+@import "../elements/ball"
+@import "../elements/menu"
+@import "../elements/button"
+@import "../elements/swiper-worker"
+
+@import "../elements/hamburger"
+@import "../elements/head-name"
+@import "../elements/menu-name"
+@import "../elements/page-content"
+
+
+
+//.content-wrapper__worker--info
+
+.content-wrapper__worker--portfolio
+
+    @media only screen and (min-width: 1281px)
+        padding-top: 105px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        padding-top: 55px
+
+/*_____WORKER_____*/
+
+.worker
+    display: flex
+    justify-content: center
+
+    @media only screen and (min-width: 769px)
+        flex-direction: row
+        justify-content: flex-start
+
+    @media only screen and (max-width: 768px)
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+
+
+.worker--portfolio
+    background: linear-gradient(to bottom, white, #fff9f9)
+
+.worker__wrapper--photo
+
+    @media only screen and (min-width: 1281px)
+        width: 475px
+        margin-right: 90px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 330px
+        margin-right: 30px
+
+    @media only screen and (min-width: 501px) and (max-width: 768px)
+        //min-width: 290px
+        width: calc(50% - 30px)
+        margin-right: 30px
+        margin-bottom: 35px
+
+    @media only screen and (max-width: 500px)
+        width: 100%
+        margin-right: 0
+        margin-bottom: 35px
+
+.worker__wrapper--info
+    
+    @media only screen and (min-width: 1281px)
+        width: 540px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        //width: 345px
+        margin-top: 15px
+
+    @media only screen and (min-width: 501px) and (max-width: 768px)
+        //min-width: 290px
+        width: 50%
+        //margin-top: 35px
+    @media only screen and (max-width: 500px)
+        width: 100%
+
+.worker__wrapper--description
+    box-sizing: border-box
+    
+    @media only screen and (min-width: 1281px)
+        width: 475px
+        margin-right: 90px
+        padding: 0 45px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 330px
+        margin-right: 30px
+
+    @media only screen and (min-width: 501px) and (max-width: 768px)
+        //min-width: 290px
+        width: calc(50% - 30px)
+        margin-right: 30px
+
+    @media only screen and (max-width: 500px)
+        width: 100%
+        margin-right: 0
+
+
+.worker__wrapper--slider
+    position: relative
+
+    @media only screen and (min-width: 1281px)
+        width: 540px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        //width: 345px
+        width: calc(100% - 360px)
+        padding-left: 15px
+
+    @media only screen and (min-width: 501px) and (max-width: 768px)
+        //width: 290px
+        width: 50%
+
+    @media only screen and (max-width: 500px)
+        width: 100%
+
+
+.worker__img
+
+    @media only screen and (min-width: 1281px)
+        width: 475px
+        height: 475px
+        padding-bottom: 30px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 330px
+        height: 325px
+        padding-bottom: 20px
+
+    @media only screen and (max-width: 768px)
+        //width: 290px
+        //height: 285px
+        width: 100%
+        height: auto
+        padding-bottom: 15px
+
+.worker__expirience
+    height: 55px
+    background-color: #fff9f9
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @media only screen and (min-width: 1281px)
+        width: 475px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 330px
+
+    @media only screen and (max-width: 768px)
+        width: 100%
+        //width: 290px
+
+.worker__text
+    line-height: 28px
+    margin: 0
+    padding: 0
+    display: block
+
+.worker__text--header
+    font-family: "Raleway-Bold", sans-serif
+    font-weight: 700
+    padding-right: 10px
+    
+    @media only screen and (min-width: 1281px)
+        font-size: 20px
+        padding-bottom: 25px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 18px
+        padding-bottom: 12px
+
+    @media only screen and (max-width: 768px)
+        font-size: 18px
+        padding-bottom: 17px
+
+.worker__text--countent
+    font-family: "Raleway-Medium", sans-serif
+    font-weight: 600
+
+    @media only screen and (min-width: 1281px)
+        font-size: 16px
+        margin-bottom: 33px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 33px
+
+    @media only screen and (max-width: 768px)
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 18px
+    
+    &:last-child
+
+        @media only screen and (max-width: 1280px) and (min-width: 769px)
+            margin-bottom: 0
+
+.worker__text--expirience
+    padding-top: 0
+    padding-bottom: 0
+    margin-bottom: 0
+
+.worker__text--header-description
+
+    @media only screen and (min-width: 769px)
+        text-align: center
+
+.worker__text--grey
+    color: rgb( 106, 105, 104 )
+
+.worker__text--brown
+    color: #d9bf8b
+    margin-bottom: 5px
+
+.worker__slider--wrapper
+    overflow: hidden
+
+.worker__slider--img
+ 
+    @media only screen and (min-width: 1281px)
+        width: 475px
+        height: 340px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 315px
+        height: 255px
+
+    @media only screen and (max-width: 768px)
+        width: 245px
+        height: 200px
+
+.worker__wrapper--like
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+
+    @media only screen and (min-width: 1281px)
+        margin: 20px 0 25px 0
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        margin: 20px 0 25px 0
+
+    @media only screen and (max-width: 768px)
+        margin: 15px 0
+
+.worker__wrapper--like-counter
+    font-family: "Lato", sans-serif
+    color: #6a6968
+    line-height: 1
+    font-size: 18px
+    margin-right: 10px
+
+.worker__wrapper--like-img
+    fill: #969696
+    cursor: pointer
+
+    @media only screen and (min-width: 1281px)
+        width: 24px
+        height: 22px
+
+    @media only screen and (max-width: 1280px)
+        width: 20px
+        height: 16px
+
+.worker__wrapper--like-img.is-active
+    fill: #eaa1a1      
+
+.worker__text--slider
+
+    @media only screen and (min-width: 1281px)
+        padding-left: 32px
+        padding-right: 32px
+        
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        //padding-left: 15px
+        padding-right: 15px
+
+    @media only screen and (max-width: 768px)
+        //padding-left: 22px
+        padding-right: 22px
+
+
+
+
+
+
+
+
+

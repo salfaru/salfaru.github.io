@@ -1,0 +1,239 @@
+/*__________CONTENT__________*/
+
+.content
+    position: relative
+    overflow: hidden
+    z-index: 1000
+    max-width: 1920px
+    margin-left: auto
+    margin-right: auto
+
+    @media only screen and (min-width: 1281px)
+        margin-top: 200px
+        margin-bottom: 55px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        margin-top: 11.72vw
+        box-shadow: 0 -150px white
+
+    @media only screen and (max-width: 769px) and (min-width: 621px)
+        box-shadow: 0 -110px white
+
+    @media only screen and (max-width: 620px) and (min-width: 421px)
+        box-shadow: 0 -200px white
+
+    @media only screen and (max-width: 420px)
+        box-shadow: 0 -215px white
+
+.content__services-card
+
+.content__balls-group
+
+    @media only screen and (min-width: 1281px)
+        right: 1860px
+        top: 70px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: 1400px
+        top: 120px
+
+    @media only screen and (max-width: 768px)
+        display: none
+
+.content__ball-content--one
+
+    @media only screen and (min-width: 1281px)
+        left: 1550px
+        top: 2000px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 1050px
+        top: 1230px
+
+    @media only screen and (max-width: 768px)
+        right: -40px
+        top: 2035px
+
+.content__ball-content--two
+
+    @media only screen and (min-width: 1281px)
+        right: 1620px
+        top: 2450px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: 1020px
+        top: 1550px
+
+    @media only screen and (max-width: 768px)
+        left: 8px
+        top: 2175px
+
+.content__ball-content--three
+
+    @media only screen and (min-width: 1281px)
+        right: 1750px
+        top: 2340px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: 1150px
+        top: 1480px
+
+    @media only screen and (max-width: 768px)
+        left: -5px
+        top: 2150px
+
+.content__coupon
+
+    @media only screen and (min-width: 1281px)
+        margin-top: 285px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        margin-top: 22.13%
+
+    @media only screen and (max-width: 768px)
+        margin-top: 95px
+
+.content__news
+
+.content__banner-index
+    display: flex
+    justify-content: center
+
+    @media only screen and (min-width: 769px)
+        margin-top: 75px
+
+    @media only screen and (max-width: 768px)
+        margin-top: 5px
+
+/*_____BANNER-INDEX_____*/
+
+.banner-index
+    position: relative
+
+.banner-index__img
+    background-repeat: no-repeat
+    z-index: 1000
+
+    @media only screen and (min-width: 1281px)
+        width: 1150px
+        height: 290px
+        background-image: url("/img/index/banner-index_4.jpg")
+        background-size: contain
+        background-position: center
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 688px
+        height: 175px
+        background-image: url("/img/index/banner-index_4.jpg")
+        background-size: contain
+        background-position: center
+
+    @media only screen and (max-width: 768px)
+        width: 288px
+        height: 200px
+        background-image: url("/img/index/banner-index_4.jpg")
+        background-size: cover
+        background-position: right top
+
+.banner-index__name
+    position: absolute
+    font-family: "Raleway-Black", sans-serif
+    color: rgb( 173, 141, 118 )
+    letter-spacing: 0.075em
+    font-weight: 900
+    z-index: 1200
+
+    @media only screen and (min-width: 1281px)
+        font-size: 40px
+        left: 90px
+        top: 50px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 26px
+        left: 45px
+        top: 30px
+
+    @media only screen and (max-width: 768px)
+        font-size: 24px
+        left: 30px
+        top: 30px
+
+/*_____COUPON_____*/
+
+.coupon
+    display: flex
+    flex-direction: column
+    position: relative
+    align-items: center
+    justify-content: center
+    
+.coupon__description
+    font-family: "Raleway-Medium", sans-serif
+    color: rgb( 126, 114, 101 )
+    text-align: center
+    width: 100%
+    line-height: 24px
+    margin-bottom: 50px
+    font-weight: 600
+
+    @media only screen and (min-width: 1281px)
+        font-size: 30px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 20px
+
+    @media only screen and (max-width: 768px)
+        font-size: 16px
+        width: 200px
+
+.coupon__img
+    display: flex
+    z-index: 100
+    height: auto
+
+    @media only screen and (min-width: 1281px)
+        width: 1155px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 690px
+
+    @media only screen and (max-width: 768px)
+        width: 290px
+
+.coupon__wave
+    @media only screen and (min-width: 769px)
+        bottom: -50px
+
+    @media only screen and (max-width: 768px)
+        bottom: -80px
+
+/*_____NEWS_____*/
+
+.news
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    position: relative
+
+    @media only screen and (min-width: 769px)
+        margin: 200px 0 145px 0
+
+    @media only screen and (max-width: 768px)
+        margin: 150px 0 135px 0
+
+.news__slider
+
+.news__section-name
+
+    @media only screen and (min-width: 1281px)
+        top: -270px
+        left: 19.53%
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        top: -220px
+        left: 9.11%
+
+    @media only screen and (max-width: 768px)
+        top: -120px
+        left: calc((100% - 190px) / 2)

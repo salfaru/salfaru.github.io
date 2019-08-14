@@ -1,0 +1,156 @@
+/*_____SLIDER_____*/
+
+.slider__button-ball
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 10px
+
+.slider__button-ball-button
+    width: 100%
+
+    @media only screen and (min-width: 769px)
+        display: none
+
+    @media only screen and (max-width: 768px)
+        border-radius: 50%
+        width: 8px
+        height: 8px
+        margin: 0 6px
+
+.slider__button-ball-button--not-active
+    background-color: #cdc5bb
+
+.slider__button-ball-button--active
+    background-color: #d1be8c
+    
+.slider__button-slider-show-all
+    bottom: -65px
+
+    @media only screen and (min-width: 1281px)
+        right: calc((100% - 995px) / 2)
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: calc((100% - 675px) / 2)
+
+    @media only screen and (max-width: 768px)
+        right: calc((100% - 275px) / 2)
+
+/*_____BUTTON-SLIDER-SHOW-ALL_____*/
+
+.button-slider-show-all
+    position: absolute
+    border-bottom: #ffe3e3 1px dashed
+    padding-bottom: 3px
+    cursor: pointer
+
+.button-slider-show-all__text
+    font-family: "Raleway-Medium", sans-serif
+    color: rgba( 131, 119, 107, 0.878 )
+    text-align: center
+    line-height: 1
+    font-weight: 600
+    text-decoration: none
+
+    @media only screen and (min-width: 1281px)
+        font-size: 18px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 16px
+
+    @media only screen and (max-width: 768px)
+        font-size: 14px
+
+/*_____SWIPER_____*/
+
+.content
+    
+    .content__news
+
+        .swiper-container 
+
+            @media only screen and (min-width: 1281px)
+                width: 995px
+                height: 560px
+                padding: 0
+                margin: 0
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                width: 675px
+                height: 415px
+                padding: 0
+                margin: 0
+
+            @media only screen and (max-width: 768px)
+                width: 305px
+                height: 405px
+                padding: 0
+                margin: 0
+
+        .slider__arrow
+            position: absolute
+            fill: #ebe2d2
+            cursor: pointer
+            background: none
+            margin: 0
+            padding: 0
+
+            @media only screen and (min-width: 1281px)
+                width: 36px
+                height: 36px
+                top: 262px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                width: 19px
+                height: 19px
+                top: 193px
+
+            @media only screen and (max-width: 768px)
+                display: none
+
+        .slider__arrow:hover
+            fill: #c3b8a3
+
+        .slider__arrow-prev
+            transform: scale(-1, 1)
+
+            @media only screen and (min-width: 1281px)
+                left: calc(((100% - 995px) / 2) - 72px)
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                left: calc(((100% - 675px) / 2) - 38px)
+
+        .slider__arrow-next
+
+            @media only screen and (min-width: 1281px)
+                right: calc(((100% - 995px) / 2) - 72px)
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                right: calc(((100% - 675px) / 2) - 38px)
+
+        .swiper-pagination
+            bottom: -20px
+
+            @media only screen and (min-width: 768px)
+                display: none
+
+        .swiper-pagination-bullet
+            width: 8px
+            height: 8px
+            background: #cdc5bb
+            margin: 0 6px
+
+        .swiper-pagination-bullet-active
+            background: #d1be8c
+            outline: none
+
+
+
+
+
+
+
+
+
+
+

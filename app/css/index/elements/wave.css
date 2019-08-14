@@ -1,0 +1,45 @@
+/*_____WAVE_____*/
+.wave {
+  position: absolute;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0; }
+
+.wave__up {
+  z-index: 200;
+  background-image: url("/img/index/img-wale.png");
+  height: 335px; }
+
+.wave__down {
+  z-index: 600;
+  background-image: url("/img/index/img-wale-white.png");
+  height: 320px; }
+
+.wawe_solo {
+  z-index: 600;
+  background-image: url("/img/index/img-wale-certificate.png"); }
+
+/*_____WAVE-SLIDER_____*/
+.wave--slider {
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+/*_____WAVE__DOWN_____*/
+@media only screen and (min-width: 1281px) {
+  .wave--coupon {
+    -webkit-background-size: contain;
+            background-size: contain;
+    height: 323px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .wave--coupon {
+    -webkit-background-size: cover;
+            background-size: cover;
+    height: 220px; } }
+
+@media only screen and (max-width: 768px) {
+  .wave--coupon {
+    -webkit-background-size: contain;
+            background-size: contain;
+    height: 200px; } }

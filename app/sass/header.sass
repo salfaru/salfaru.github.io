@@ -1,0 +1,160 @@
+/*_____HEADER_____*/
+
+
+.header
+  //display: flex
+  z-index: 3000
+  position: relative
+  //justify-content: space-between
+  //align-items: center
+  box-sizing: border-box
+  width: 100%
+  background-color: white
+
+  @media only screen and (min-width: 1281px)
+    //padding: 0 4.7%
+    height: 55px
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    //padding: 0 40px
+    height: 70px
+
+  @media only screen and (max-width: 768px)
+    //padding: 0 15px
+    height: 70px
+
+  @media only screen and (max-width: 560px)
+    //flex-wrap: wrap
+    background: linear-gradient(to top, white 0%, white 50%, #8d857a 50%, #8d857a 100%)
+    height: 105px
+    box-shadow: 1px 2px 6px 0 #00000036
+
+.header__container
+  max-width: 1920px
+  box-sizing: border-box
+  height: 100%
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  @media only screen and (min-width: 1281px)
+    padding: 0 4.7vw
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    padding: 0 40px
+
+  @media only screen and (max-width: 768px)
+    padding: 0 15px
+
+  @media only screen and (max-width: 560px)
+    flex-wrap: wrap
+
+.header--theme-pink
+  box-shadow: 0 1px 4px 0 #dbdbdb
+  background-color: #feedeb
+
+  @media only screen and (max-width: 560px)
+    background: linear-gradient(to top, #feedeb 0%, #feedeb 50%, #fff 50%, #fff 100%)
+
+
+.header--fixed
+  position: fixed
+  top: -56px
+
+.header--theme-pink .header__hamburger-button
+  display: none
+
+.header__logo-wrap
+  position: relative
+
+  @media only screen and (max-width: 560px)
+    width: 100%
+    order: +1
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 60px
+
+.header__text-container
+  display: flex
+  justify-content: flex-start
+  white-space: pre
+
+  @media only screen and (min-width: 1281px)
+    flex-wrap: nowrap
+    width: 380px
+    align-items: center
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    flex-direction: column
+    width: 140px
+
+  @media only screen and (max-width: 768px)
+    width: 120px
+    flex-direction: column
+    margin-top: 5px
+
+.header__phone-container
+
+  @media only screen and (max-width: 768px)
+    align-items: flex-end
+
+.header__logo
+
+  @media only screen and (min-width: 1281px)
+    width: 260px
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    width: 240px
+
+  @media only screen and (max-width: 768px) and (min-width: 561px)
+    width: 180px
+
+  @media only screen and (max-width: 560px)
+    width: 180px
+    margin-top: 10px
+
+.header__phone-name
+  font-family: "Lato", sans-serif
+  font-weight: 400
+
+  @media only screen and (max-width: 1280px)
+    display: none
+
+.header__text
+  text-align: left
+  letter-spacing: 0.01em
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  text-decoration: none
+
+  @media only screen and (min-width: 1281px)
+    font-size: 19px
+    color: rgb( 35, 35, 35 )
+
+    &:first-child
+      margin-right: 10px
+
+    &:last-child
+      margin-left: 10px
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    font-size: 14px
+    line-height: 22px
+    color: rgb( 35, 35, 35 )
+
+  @media only screen and (max-width: 768px) and (min-width: 561px)
+    font-size: 12px
+    line-height: 18px
+    color: rgb( 35, 35, 35 )
+
+  @media only screen and (max-width: 560px)
+    font-size: 12px
+    line-height: 18px
+    color: #fff
+
+.header--theme-pink .header__text
+
+  @media only screen and (max-width: 560px)
+    color: rgb( 35, 35, 35)

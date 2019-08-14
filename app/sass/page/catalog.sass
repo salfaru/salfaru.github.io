@@ -1,0 +1,422 @@
+@import "../base"
+@import "../elements/ball"
+@import "../elements/menu"
+@import "../elements/checkbox"
+@import "../elements/button"
+
+@import "../elements/hamburger"
+@import "../elements/menu-name"
+@import "../elements/head-name"
+@import "../elements/page-content"
+
+
+
+
+
+/*_____CONTENT-WRAPPER_____*/
+
+.content-wrapper__catalog
+  position: relative
+  display: flex
+  align-items: flex-start
+  margin-top: 0
+
+  @media only screen and (min-width: 1281px)
+    margin-bottom: 100px
+
+  @media only screen and (max-width: 1280px)
+    margin-bottom: 44px
+
+
+/*_____CATALOG_____*/
+
+.catalog
+  width: 100%
+  display: flex
+  align-items: flex-start
+
+.catalog__filters
+  margin-right: 30px
+  flex-shrink: 0
+  @media screen and (min-width: 1281px)
+    width: 255px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    width: 210px
+
+  @media only screen and (max-width: 760px)
+    position: fixed
+    background-color: #fff
+    width: 100vw
+    box-sizing: border-box
+    height: 100vh
+    left: -100vw
+    top: 0
+    z-index: 2500
+    padding: 105px 16px 30px 16px
+    margin-right: 0
+    transition: left 0.3s ease
+
+.catalog__filters.is-show
+  left: 0
+
+.is-fixed .catalog__filters
+  @media only screen and (max-width: 760px)
+    padding-top: 52px
+
+.catalog__filters-title
+  height: 44px
+  background-color: #e4cf9a
+  color: #ffffff
+  text-transform: uppercase
+  font-family: "Raleway-Bold", sans-serif
+  font-weight: 700
+  font-size: 16px
+  line-height: 44px
+  margin: 0
+  letter-spacing: 0.075em
+  @media screen and (min-width: 1281px)
+    padding-left: 20px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    padding-left: 10px
+
+  @media only screen and (max-width: 760px)
+    background-color: #fff
+
+
+.catalog__filter
+  border-bottom: 1px solid #e9e9e9
+  @media screen and (min-width: 1281px)
+    padding-top: 20px
+
+  @media only screen and (max-width: 1280px)
+    padding-top: 12px
+
+.catalog__filters-head-wrapper
+  position: relative
+
+.catalog__filter-close
+  @media screen and (min-width: 761px)
+    display: none
+
+  @media only screen and (max-width: 760px)
+    display: block
+    background-color: transparent
+    border: none
+    outline: none
+    width: 16px
+    height: 16px
+    position: absolute
+    top: 16px
+    right: 0
+
+
+.catalog__close-icon
+  fill: #9a8d84
+  width: 16px
+  height: 16px
+
+.catalog__filter-input
+  display: none
+
+.catalog__filter-label
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  font-family: "Raleway-Bold", sans-serif
+  font-weight: 700
+  color: #9a8d84
+  width: 100%
+  position: relative
+  cursor: pointer
+  background-color: #fff
+  font-size: 14px
+  line-height: 28px
+  letter-spacing: 0.075em
+  text-transform: uppercase
+  transition: background-color 0.2s ease, color 0.2s ease
+  @media screen and (min-width: 1281px)
+    padding: 0 42px 0 20px
+
+  @media only screen and (max-width: 1280px)
+    padding: 0 32px 0 10px
+
+
+.catalog__filter-label:before,.catalog__filter-label:after
+  content: ""
+  position: absolute
+  display: block
+  background-color: #9b887b
+  width: 16px
+  height: 2px
+  @media screen and (min-width: 1281px)
+    right: 20px
+
+  @media only screen  and (max-width: 1280px)
+    right: 10px
+
+
+
+.catalog__filter-label:after
+  opacity: 1
+  transform: rotate(90deg)
+  transition: transform 0.2s ease, opacity 0.2s ease
+
+.catalog__filter-content
+  display: block
+  width: 100%
+  opacity: 0
+  z-index: -99
+  pointer-events: none
+  padding-bottom: 0
+  min-height: 0
+  height: 0
+  max-height: 0
+  transition: min-height 0.2s ease, max-height 0.2s ease, padding 0.2s ease
+
+.catalog__filter-input:checked
+  &~.catalog__filter-content
+    pointer-events: all
+    opacity: 1
+    z-index: 2
+    height: inherit
+    min-height: 36px
+    max-height: 3000px
+    transition: max-height 0.2s ease, min-height 0.2s ease, padding 0.2s ease
+    @media screen and (min-width: 1281px)
+      padding-bottom: 30px
+
+    @media only screen and (max-width: 1280px)
+      padding-bottom: 20px
+
+
+.catalog__filter-input:checked
+  &+.catalog__filter-label:after
+    transform: rotate(0deg)
+    opacity: 0
+
+
+.catalog__filter .checkbox
+  @media screen and (min-width: 1281px)
+    margin-top: 16px
+    margin-left: 20px
+
+  @media only screen and (max-width: 1280px)
+    margin-top: 10px
+    margin-left: 10px
+
+
+.catalog__products-wrapper
+  width: 100%
+
+.catalog__sorting
+  height: 44px
+  border: 1px solid #d9d7d3
+  display: flex
+  align-items: center
+  font-family: "Raleway-Medium", sans-serif
+  font-weight: 500
+  justify-content: flex-end
+  color: #6a6968
+  @media screen and (min-width: 761px)
+    padding: 0 30px
+    width: calc(100% - 60px)
+    font-size: 16px
+
+  @media only screen and (max-width: 760px)
+    padding: 0 10px
+    width: calc(100% - 20px)
+    font-size: 14px
+
+.catalog__filters-open
+  display: none
+  border: none
+  background-color: rgba(255,255,255,0)
+  outline: none
+  color: #6a6968
+  font-size: 14px
+  font-family: "Raleway-Bold", sans-serif
+  font-weight: 700
+  @media only screen and (max-width: 760px)
+    display: block
+    margin-right: auto
+
+
+.catalog__sorting-title
+  margin-right: 12px
+  @media only screen and (max-width: 760px)
+    margin-right: 6px
+
+.catalog__sorting-input
+  display: none
+
+.catalog__sorting-label
+  position: relative
+  padding-right: 20px
+  cursor: pointer
+
+.catalog__sorting-icon
+  position: absolute
+  right: 0
+  top: 4px
+  width: 14px
+  @media only screen and (max-width: 760px)
+    top: 1px
+
+.catalog__sorting-input:checked + .catalog__sorting-label .catalog__sorting-icon
+  transform: rotate(-180deg)
+
+.catalog__products-list
+  display: flex
+  flex-wrap: wrap
+  @media only screen and (min-width: 510px) and (max-width: 1280px)
+    max-width: 700px
+    margin: 0 auto
+    justify-content: space-between
+
+  @media only screen  and (max-width: 509px)
+    justify-content: center
+
+.catalog__product-item
+  padding: 15px
+  margin: 30px 0 0 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  cursor: pointer
+  @media screen and (min-width: 1281px)
+    max-width: calc(33.3% - 30px)
+    &:hover
+      box-shadow: 0 5px 9px 2px rgba(152,148,141,.33)
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    max-width: 280px
+    width: calc(50% - 30px)
+
+  @media only screen and (min-width: 510px) and (max-width: 760px)
+    min-width: 210px
+    width: calc(50% - 30px)
+    max-width: 290px
+  @media only screen and (max-width: 509px)
+    flex: 1 0
+    min-width: 210px
+    max-width: 290px
+
+
+
+
+.catalog__product-img-wrapper
+  overflow: hidden
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  margin-bottom: 10px
+  max-height: 200px
+
+.catalog__product-img
+  opacity: 0
+
+.catalog__product-body
+  width: 100%
+
+.catalog__product-title
+  font-family: "Raleway-Medium", sans-serif
+  font-weight: 500
+  color: #6a6968
+  font-size: 16px
+  line-height: 22px
+  letter-spacing: 0.01em
+  text-align: center
+  width: 100%
+  margin: 0
+  padding: 15px 0 5px 0
+  border-top: 1px solid #ece7dd
+
+.catalog__product-seria
+  font-family: "Raleway-Bold", sans-serif
+  font-weight: 700
+  color: #d9bf8b
+  font-size: 14px
+  line-height: 24px
+  letter-spacing: 0.01em
+  text-align: center
+  width: 100%
+  display: inline-block
+
+.catalog__product-price
+  font-family: "Lato-Bold", sans-serif
+  font-weight: 700
+  color: #6a6968
+  font-size: 20px
+  line-height: 28px
+  letter-spacing: 0.01em
+  width: 100%
+  text-align: center
+  display: inline-block
+  margin-top: 30px
+  margin-bottom: 20px
+
+.catalog__product-buy
+  width: 128px
+  height: 40px
+  color: #7d7165
+  font-family: "Lato-Bold", sans-serif
+  font-weight: 700
+  font-size: 12px
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  margin: 0 auto
+  position: relative
+
+.catalog__pagination
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  font-size: 16px
+  line-height: 28px
+  @media screen and (min-width: 1281px)
+    padding-top: 30px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    padding-top: 40px
+
+  @media only screen and (max-width: 760px)
+    padding-top: 30px
+    justify-content: center
+
+.catalog__pagination-title
+  color: #6a6968
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  letter-spacing: 0.01em
+
+.catalog__pagination-list
+  display: flex
+  align-items: center
+  margin-left: 10px
+  padding: 0
+
+.catalog__pagination-item
+  list-style-type: none
+
+
+.catalog__pagination-link
+  background-color: #fff
+  width: 20px
+  height: 20px
+  margin: 0 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "Lato-Bold", sans-serif
+  font-weight: 700
+  font-size: 16px
+  color: #6a6968
+  text-decoration: none
+  transition: background-color 0.2s ease
+
+.catalog__pagination-link.is-active
+  background-color: #dcd0b8
+  color: #fff

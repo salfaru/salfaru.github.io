@@ -1,0 +1,195 @@
+@import "../base"
+@import "../elements/ball"
+@import "../elements/menu"
+
+@import "../elements/hamburger"
+@import "../elements/head-name"
+@import "../elements/menu-name"
+@import "../elements/page-content"
+
+
+
+/*_____CONTENT-WRAPPER_____*/
+
+.content-wrapper__catalog
+    position: relative
+    display: flex
+    align-items: flex-start
+    margin-top: 0
+
+    @media only screen and (min-width: 1281px)
+        margin-bottom: 100px
+
+    @media only screen and (max-width: 1280px)
+        margin-bottom: 44px
+
+/*_____ACTION_____*/
+
+.action
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+.action__banner
+    width: 100%
+    border-bottom: 15px solid #fbf7f6
+    position: relative
+
+    @media only screen and (min-width: 1281px)
+        height: 280px
+        margin-bottom: 35px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        display: flex
+        flex-direction: row-reverse
+        flex-wrap: wrap
+        height: 100%
+        min-height: 20vw
+        margin-bottom: 35px
+
+    @media only screen and (max-width: 760px)
+        height: inherit
+        display: flex
+        flex-direction: row-reverse
+        flex-wrap: wrap
+        margin-bottom: 20px
+
+
+.action__background-banner
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: right top
+    width: 100%
+
+    @media only screen and (min-width: 1281px)
+        height: 100%
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        width: calc(100% - 300px)
+
+    @media only screen and (max-width: 760px)
+        width: 100%
+        height: 30vw
+        min-height: 140px
+        order: 2
+
+
+.action__title
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: flex-start
+    color: #6a6968
+    font-family: "Lato-Bold", sans-serif
+    letter-spacing: 0.01em
+
+    @media only screen and (min-width: 1281px)
+        position: absolute
+        top: 0
+        left: 65px
+        font-size: 30px
+        line-height: 44px
+        padding-top: 55px
+        height: 100%
+        width: 350px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        position: relative
+        //padding-top: 25px
+        font-size: 22px
+        line-height: 28px
+        padding-left: 30px
+        min-width: 250px
+        flex: 1 0
+        margin-top: auto
+        margin-bottom: auto
+
+    @media only screen and (max-width: 760px)
+        position: relative
+        font-size: 20px
+        line-height: 28px
+        width: 100%
+        padding-top: 20px
+        padding-bottom: 20px
+        background-color: #fff
+        justify-content: center
+        align-items: center
+        text-align: center
+        order: 1
+
+.action__title-text--accent
+    color: #be974b
+
+    @media only screen and (min-width: 1281px)
+        font-size: 36px
+        line-height: 48px
+        width: 100%
+        padding-left: 45px
+        margin-top: 25px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        font-size: 26px
+        line-height: 30px
+        margin-top: 20px
+
+    @media only screen and (max-width: 760px)
+        font-size: 20px
+        line-height: 30px
+        margin-top: 10px
+
+
+.action__description
+    font-family: "Lato", sans-serif
+    letter-spacing: 0.01em
+    color: #6a6968
+
+    @media only screen and (min-width: 1281px)
+        font-size: 18px
+        line-height: 28px
+        margin-bottom: 80px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 70px
+
+    @media only screen and (max-width: 760px)
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 30px
+
+.action__description-row
+    display: flex
+    align-items: flex-start
+
+    @media only screen and (min-width: 1281px)
+        margin-bottom: 15px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        margin-bottom: 13px
+
+    @media only screen and (max-width: 760px)
+        margin-bottom: 20px
+        flex-wrap: wrap
+
+
+.action__description-title
+    font-weight: 700
+    margin-right: 20px
+
+    @media only screen and (max-width: 760px)
+        width: 100%
+        margin-bottom: 10px
+
+.action__description-content--accent
+    color: #c79a43
+    font-weight: 700
+
+    @media only screen and (min-width: 1281px)
+        font-size: 20px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        font-size: 18px
+
+    @media only screen and (max-width: 760px)
+        font-size: 16px

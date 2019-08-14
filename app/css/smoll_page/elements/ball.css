@@ -1,0 +1,46 @@
+/*_____BALL_____*/
+.ball {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+/*_____BALL_CONTENT_____*/
+.ball-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(90%, #fff9f9));
+  background: -webkit-linear-gradient(top, white 0%, #fff9f9 90%);
+  background: -o-linear-gradient(top, white 0%, #fff9f9 90%);
+  background: linear-gradient(to bottom, white 0%, #fff9f9 90%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.ball-content--head-one {
+  width: 240px;
+  height: 240px; }
+
+.ball-content--head-two {
+  width: 130px;
+  height: 130px; }
+
+.ball-content--head-three {
+  width: 80px;
+  height: 80px; }
+
+/*_____BALL_FOOTER_____*/
+.ball-footer {
+  background-color: #9b9084;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  @media only screen and (min-width: 1281px) {
+    .ball-footer {
+      width: 400px;
+      height: 400px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .ball-footer {
+      width: 395px;
+      height: 395px; } }
+  @media only screen and (max-width: 768px) {
+    .ball-footer {
+      width: 340px;
+      height: 340px; } }

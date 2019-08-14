@@ -1,0 +1,119 @@
+/*_____SECTION-NAME_____*/
+
+.section-name
+    z-index: 2000
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    transition: opacity 1.25s linear
+
+.section-name__smoll
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+
+.section-name__big-text
+    font-family: "Raleway-Black"
+    text-align: center
+    line-height: 1
+    font-weight: 900
+    margin: 0
+    transition: color 1s ease
+
+.section-name__small-text
+    font-family: "Raleway-Bold"
+    color: #716354
+    text-transform: uppercase
+    white-space: pre
+    line-height: 1
+    font-weight: 700
+    letter-spacing: 0.4em
+
+.section-name__line
+    width: 100%
+    height: 0px
+    margin: 0 5px
+
+/*_____SECTION-NAME--SLIDER_____*/
+
+.section-name__big-text--slider
+
+    @media only screen and (min-width: 1281px)
+        font-size: calc(100px - ((1920px - 100vw) * 0.06)
+        padding-top: calc(35px - ((1920px - 100vw) * 0.015)
+        padding-bottom: calc(35px - ((1920px - 100vw) * 0.015)
+        padding-left: 0
+        padding-right: 0
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 50px
+        padding: 25px 0
+
+    @media only screen and (max-width: 768px)
+        font-size: 35px
+        padding: 10px 0
+
+.section-name__big-text--slider-pink
+    color: #d9bf8b
+    letter-spacing: 0.075em
+
+.section-name__big-text--slider-grey
+    color: #c4b391
+    letter-spacing: 0.075em
+
+.section-name__big-text--slider-white-one
+    color: #91867a  
+    letter-spacing: 0.005em
+
+.section-name__big-text--slider-white-two
+    color: #bfa673
+    letter-spacing: 0.005em
+
+.section-name__small-text--slider
+    margin: 0
+
+    @media only screen and (min-width: 1281px)
+        font-size: calc(20px - ((1920px - 100vw) * 0.012)
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 10px
+
+    @media only screen and (max-width: 768px)
+        font-size: 8px
+
+.section-name__line--slider
+    border-top: solid 3px #d9bf8b
+
+/*_____SECTION-NAME--NEWS_____*/
+
+.section-name__big-text--news
+    color: #d9bf8b
+
+    @media only screen and (min-width: 1281px)
+        font-size: 80px
+        padding: 25px 0
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 50px
+        padding: 15px 0
+
+    @media only screen and (max-width: 768px)
+        font-size: 35px
+        padding: 10px 0
+
+.section-name__small-text--news
+    margin: 0
+
+    @media only screen and (min-width: 1281px)
+        font-size: 16px
+
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        font-size: 10px
+
+    @media only screen and (max-width: 768px)
+        font-size: 8px
+
+.section-name__line--news
+    border-top: solid 2px #e1d5bd

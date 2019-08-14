@@ -1,0 +1,270 @@
+/*__________CONTENT__________*/
+.content {
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 1281px) {
+    .content {
+      margin-top: 200px;
+      margin-bottom: 55px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .content {
+      margin-top: 11.72vw;
+      -webkit-box-shadow: 0 -150px white;
+              box-shadow: 0 -150px white; } }
+  @media only screen and (max-width: 769px) and (min-width: 621px) {
+    .content {
+      -webkit-box-shadow: 0 -110px white;
+              box-shadow: 0 -110px white; } }
+  @media only screen and (max-width: 620px) and (min-width: 421px) {
+    .content {
+      -webkit-box-shadow: 0 -200px white;
+              box-shadow: 0 -200px white; } }
+  @media only screen and (max-width: 420px) {
+    .content {
+      -webkit-box-shadow: 0 -215px white;
+              box-shadow: 0 -215px white; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__balls-group {
+    right: 1860px;
+    top: 70px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .content__balls-group {
+    right: 1400px;
+    top: 120px; } }
+
+@media only screen and (max-width: 768px) {
+  .content__balls-group {
+    display: none; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__ball-content--one {
+    left: 1550px;
+    top: 2000px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .content__ball-content--one {
+    left: 1050px;
+    top: 1230px; } }
+
+@media only screen and (max-width: 768px) {
+  .content__ball-content--one {
+    right: -40px;
+    top: 1935px; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__ball-content--two {
+    right: 1620px;
+    top: 2450px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .content__ball-content--two {
+    right: 1020px;
+    top: 1550px; } }
+
+@media only screen and (max-width: 768px) {
+  .content__ball-content--two {
+    left: 10px;
+    top: 2015px; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__ball-content--three {
+    right: 1750px;
+    top: 2340px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .content__ball-content--three {
+    right: 1150px;
+    top: 1480px; } }
+
+@media only screen and (max-width: 768px) {
+  .content__ball-content--three {
+    left: 10px;
+    top: 2000px; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__coupon {
+    margin-top: 285px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .content__coupon {
+    margin-top: 22.13%; } }
+
+@media only screen and (max-width: 768px) {
+  .content__coupon {
+    margin-top: 95px; } }
+
+.content__banner-index {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 769px) {
+    .content__banner-index {
+      margin-top: 75px; } }
+  @media only screen and (max-width: 768px) {
+    .content__banner-index {
+      margin-top: 5px; } }
+
+/*_____BANNER-INDEX_____*/
+.banner-index {
+  position: relative; }
+
+.banner-index__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1000; }
+  @media only screen and (min-width: 1281px) {
+    .banner-index__img {
+      width: 1150px;
+      height: 290px;
+      background-image: url("/img/index/banner-index.jpg"); } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .banner-index__img {
+      width: 688px;
+      height: 175px;
+      background-image: url("/img/index/banner-index.jpg"); } }
+  @media only screen and (max-width: 768px) {
+    .banner-index__img {
+      width: 288px;
+      height: 75px;
+      background-image: url("/img/index/banner-index.jpg"); } }
+
+.banner-index__name {
+  position: absolute;
+  font-family: "Raleway-Black", sans-serif;
+  color: #ad8d76;
+  letter-spacing: 0.075em;
+  font-weight: 900;
+  z-index: 1200; }
+  @media only screen and (min-width: 1281px) {
+    .banner-index__name {
+      font-size: 40px;
+      left: 90px;
+      top: 50px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .banner-index__name {
+      font-size: 26px;
+      left: 45px;
+      top: 30px; } }
+  @media only screen and (max-width: 768px) {
+    .banner-index__name {
+      font-size: 24px;
+      left: 15px;
+      top: 15px; } }
+
+/*_____COUPON_____*/
+.coupon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.coupon__description {
+  font-family: "Raleway-Medium", sans-serif;
+  color: #7e7265;
+  text-align: center;
+  width: 100%;
+  line-height: 24px;
+  margin-bottom: 50px;
+  font-weight: 600; }
+  @media only screen and (min-width: 1281px) {
+    .coupon__description {
+      font-size: 30px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .coupon__description {
+      font-size: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .coupon__description {
+      font-size: 16px;
+      width: 200px; } }
+
+.coupon__img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  height: auto; }
+  @media only screen and (min-width: 1281px) {
+    .coupon__img {
+      width: 1155px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .coupon__img {
+      width: 690px; } }
+  @media only screen and (max-width: 768px) {
+    .coupon__img {
+      width: 290px; } }
+
+@media only screen and (min-width: 769px) {
+  .coupon__wave {
+    bottom: -50px; } }
+
+@media only screen and (max-width: 768px) {
+  .coupon__wave {
+    bottom: -80px; } }
+
+/*_____NEWS_____*/
+.news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative; }
+  @media only screen and (min-width: 769px) {
+    .news {
+      margin: 200px 0 145px 0; } }
+  @media only screen and (max-width: 768px) {
+    .news {
+      margin: 150px 0 135px 0; } }
+
+@media only screen and (min-width: 1281px) {
+  .news__section-name {
+    top: -270px;
+    left: 19.53%; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .news__section-name {
+    top: -220px;
+    left: 9.11%; } }
+
+@media only screen and (max-width: 768px) {
+  .news__section-name {
+    top: -120px;
+    left: -webkit-calc((100% - 190px) / 2);
+    left: calc((100% - 190px) / 2); } }

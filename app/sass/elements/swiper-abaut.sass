@@ -1,0 +1,110 @@
+/*_____SWIPER--TOP_____*/
+
+.content-text
+    
+    .content-text__slider--top
+        position: relative
+        display: flex
+        justify-content: center
+
+        .swiper-container--top
+
+            @media only screen and (min-width: 1281px)
+                width: 1110px
+                height: 585px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                width: 690px
+                height: 365px
+
+            @media only screen and (max-width: 768px)
+                width: 290px
+                height: 190px 
+
+        .swiper-pagination
+            @media only screen and (min-width: 1281px)
+                bottom: -23px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                bottom: -18px
+
+            @media only screen and (max-width: 768px)
+                bottom: -18px
+                
+        .swiper-pagination-bullet
+            width: 8px
+            height: 8px
+            background: #cdc5bb
+            margin: 0 6px
+
+        .swiper-pagination-bullet-active
+            background: #d1be8c
+            outline: none
+
+/*_____SWIPER--BOTTOM_____*/
+
+.content-wrapper
+    
+    .content-text__slider--bottom
+        position: relative
+        display: flex
+        justify-content: center
+
+        .swiper-container--bottom
+
+            @media only screen and (min-width: 1281px)
+                width: 1110px
+                height: 100px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                width: 630px
+                height: 50px
+
+            @media only screen and (max-width: 768px)
+                margin-top: 10px
+                width: 240px
+                height: 50px 
+
+        .slider__arrow
+            position: absolute
+            fill: #c4c4c4
+            cursor: pointer
+            background: none
+            margin: 0
+            padding: 0
+            outline: none
+
+            @media only screen and (min-width: 1281px)
+                width: 15px
+                height: 28px
+                top: 36px
+
+            @media only screen and (max-width: 1280px) 
+                top: 11px
+
+            @media only screen and  (max-width: 760px)
+                top: 10px
+                width: 12px
+                height: 50px
+                display: flex
+                align-items: center
+                svg
+                    width: 100%
+
+        .slider__arrow:hover
+            fill: #c3b8a3
+
+        .slider__arrow-prev
+            transform: scale(-1, 1)
+            @media only screen and (min-width: 1281px)
+                left: -50px        
+
+            @media only screen and (max-width: 1280px)
+                left: 0
+
+        .slider__arrow-next
+            @media only screen and (min-width: 1281px)
+                right: -50px
+
+            @media only screen and (max-width: 1280px)
+                right: 0

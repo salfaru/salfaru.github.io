@@ -1,0 +1,114 @@
+/*_____SWIPER--TOP_____*/
+.content-text .content-text__slider--top {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 1281px) {
+    .content-text .content-text__slider--top .swiper-container--top {
+      width: 1110px;
+      height: 585px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .content-text .content-text__slider--top .swiper-container--top {
+      width: 690px;
+      height: 365px; } }
+  @media only screen and (max-width: 768px) {
+    .content-text .content-text__slider--top .swiper-container--top {
+      width: 290px;
+      height: 190px; } }
+  @media only screen and (min-width: 1281px) {
+    .content-text .content-text__slider--top .swiper-pagination {
+      bottom: -23px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .content-text .content-text__slider--top .swiper-pagination {
+      bottom: -18px; } }
+  @media only screen and (max-width: 768px) {
+    .content-text .content-text__slider--top .swiper-pagination {
+      bottom: -18px; } }
+  .content-text .content-text__slider--top .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #cdc5bb;
+    margin: 0 6px; }
+  .content-text .content-text__slider--top .swiper-pagination-bullet-active {
+    background: #d1be8c;
+    outline: none; }
+
+/*_____SWIPER--BOTTOM_____*/
+.content-wrapper .content-text__slider--bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 1281px) {
+    .content-wrapper .content-text__slider--bottom .swiper-container--bottom {
+      width: 1110px;
+      height: 100px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .content-wrapper .content-text__slider--bottom .swiper-container--bottom {
+      width: 630px;
+      height: 50px; } }
+  @media only screen and (max-width: 768px) {
+    .content-wrapper .content-text__slider--bottom .swiper-container--bottom {
+      margin-top: 10px;
+      width: 240px;
+      height: 50px; } }
+  .content-wrapper .content-text__slider--bottom .slider__arrow {
+    position: absolute;
+    fill: #c4c4c4;
+    cursor: pointer;
+    background: none;
+    margin: 0;
+    padding: 0;
+    outline: none; }
+    @media only screen and (min-width: 1281px) {
+      .content-wrapper .content-text__slider--bottom .slider__arrow {
+        width: 15px;
+        height: 28px;
+        top: 36px; } }
+    @media only screen and (max-width: 1280px) {
+      .content-wrapper .content-text__slider--bottom .slider__arrow {
+        top: 11px; } }
+    @media only screen and (max-width: 760px) {
+      .content-wrapper .content-text__slider--bottom .slider__arrow {
+        top: 10px;
+        width: 12px;
+        height: 50px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .content-wrapper .content-text__slider--bottom .slider__arrow svg {
+          width: 100%; } }
+  .content-wrapper .content-text__slider--bottom .slider__arrow:hover {
+    fill: #c3b8a3; }
+  .content-wrapper .content-text__slider--bottom .slider__arrow-prev {
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
+    @media only screen and (min-width: 1281px) {
+      .content-wrapper .content-text__slider--bottom .slider__arrow-prev {
+        left: -50px; } }
+    @media only screen and (max-width: 1280px) {
+      .content-wrapper .content-text__slider--bottom .slider__arrow-prev {
+        left: 0; } }
+  @media only screen and (min-width: 1281px) {
+    .content-wrapper .content-text__slider--bottom .slider__arrow-next {
+      right: -50px; } }
+  @media only screen and (max-width: 1280px) {
+    .content-wrapper .content-text__slider--bottom .slider__arrow-next {
+      right: 0; } }

@@ -1,0 +1,255 @@
+/*__________FOOTER__________*/
+
+.footer
+  background-color: #91867a
+  position: relative
+  overflow: hidden
+
+//.footer__line-one
+
+//.footer__line-two
+
+.footer__slogan-smoll
+  display: flex
+  justify-content: center
+
+  @media only screen and (min-width: 1281px)
+    padding: 65px 0
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    padding: 45px 0
+
+  @media only screen and (max-width: 768px)
+    display: none
+
+.footer__information-footer
+  display: flex
+  justify-content: center
+
+  @media only screen and (min-width: 1281px)
+    margin: 0 auto 60px auto
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    margin: 0 auto 30px auto
+
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+    align-items: center
+
+.footer__menu-horizontal
+  display: flex
+  justify-content: center
+
+.footer__copiright
+  display: flex
+  justify-content: center
+
+  @media only screen and (min-width: 1281px)
+    margin: 25px 0 30px 0
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    margin: 15px 0 20px 0
+
+  @media only screen and (max-width: 768px)
+    margin: 0 0 10px 0
+
+.footer__ball-footer
+
+  @media only screen and (min-width: 1281px)
+    bottom: -240px
+    left: calc((100% - 400px) / 2)
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    bottom: -280px
+    left: calc((100% - 395px) / 2)
+
+  @media only screen and (max-width: 768px)
+    bottom: -280px
+    left: calc((100% - 340px) / 2)
+
+/*_____LINE_____*/
+
+.line-one
+  background: linear-gradient(to left, #ecdfc5 0%, #fefefd 50%, #ecdfc5 100%)
+  height: 2px
+
+.line-two
+  background: linear-gradient(to left, #cbbb9d 0%, #dedbd7 50%, #cbbb9d 100%)
+  height: 27px
+
+/*_____SLOGAN-SMOLL_____*/
+
+.slogan-smoll
+  font-family: "Raleway-Medium", sans-serif
+  font-weight: 600
+  color: rgb( 255, 255, 255 )
+  line-height: 1
+  margin: 0
+
+  @media only screen and (min-width: 1281px)
+    font-size: 30px
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    font-size: 20px
+
+/*_____INFORMATION-FOOTER_____*/
+
+.information-footer__wrapper
+  display: flex
+  flex-wrap: wrap
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    max-height: 400px
+    flex-direction: column
+    min-width: 571px
+    width: 571px
+    align-items: center
+
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+    margin-top: 40px
+
+.information-footer
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  z-index: 1000
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    order: 1
+    align-self: flex-start
+
+    &:nth-child(2)
+      flex: 1 0
+      min-width: 291px
+      max-width: 291px
+      flex-shrink: 0
+      min-height: 200px
+      order: 3
+      align-self: flex-end
+
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+
+    &:last-child
+      padding-bottom: 10px
+
+.information__box
+  line-height: 1
+
+  @media only screen and (min-width: 1281px)
+    margin: 0 35px
+    height: 115px
+    text-align: left
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    margin: 0
+    height: 115px
+    text-align: left
+
+  @media only screen and (max-width: 768px)
+    margin: 0 0 5px 0
+    text-align: center
+    flex-wrap: wrap
+    justify-content: center
+    width: 100%
+    padding-bottom: 30px
+    display: flex
+
+.information__box--wifi
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    margin-left: 30px
+
+.information__text--padding
+  padding-bottom: 12px !important
+
+.information__box--four
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    max-width: 224px
+
+.information__box--five
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    max-width: 216px
+
+.information__box--twoo-four
+
+  @media only screen and (min-width: 769px) and (max-width: 930px)
+    max-width: 405px
+
+.information__name
+  font-family: "Raleway-Bold", sans-serif
+  text-transform: uppercase
+  padding-bottom: 18px
+  font-weight: 700
+  margin: 0
+  width: 100%
+
+  @media only screen and (min-width: 1281px)
+    font-size: 14px
+    color: rgb( 255, 255, 255 )
+
+  @media only screen and (max-width: 1280px)
+    font-size: 12px
+    color: #d5d3cf
+
+.information__text
+  font-family: "Lato-Bold", sans-serif
+  //padding-bottom: 20px
+  font-weight: 700
+  margin: 0
+  padding: 0
+  display: block
+  color: #fff
+  text-decoration: none
+  width: 100%
+
+  &:first-child
+    margin-bottom: 18px
+
+  @media only screen and (min-width: 1281px)
+    font-size: 20px
+
+  @media only screen and (max-width: 1280px)
+    font-size: 16px
+
+.information__icon
+  fill: #ede1c9
+
+.information__icon--card
+  width: 51px
+  height: 33px
+  margin-right: 20px
+  float: left
+  margin-top: -8px
+
+  @media only screen and (max-width: 1280px) and (min-width: 769px)
+    margin-bottom: 8px
+  @media only screen and (max-width: 768px)
+    margin-bottom: 8px
+    margin-left: 10px
+    margin-right: 10px
+
+.information__icon--wifi
+  width: 72px
+  height: 33px
+  margin-top: -19px
+
+  @media only screen and (max-width: 1280px)
+    margin-bottom: 19px
+
+.information__icon--parking
+  width: 51px
+  height: 51px
+
+/*_____COPIRIGHT_____*/
+
+.copiright
+  font-size: 14px
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  color: rgba( 255, 255, 255, 0.549 )
+  line-height: 1
+  white-space: pre
+  z-index: 1000

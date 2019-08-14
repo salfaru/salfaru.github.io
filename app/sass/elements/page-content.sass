@@ -1,0 +1,88 @@
+/*_____CONTENT_____*/
+
+.content
+  position: relative
+  width: 100%
+
+.content__ball-content--one
+  left: calc(((100% - 1110px) / 2) - 335px)
+  top: 60px
+
+  @media only screen and (max-width: 1280px)
+    display: none
+
+.content__ball-content--two
+  left: calc(((100% - 1110px) / 2) - 50px)
+  top: -10px
+
+  @media only screen and (max-width: 1280px)
+    display: none
+
+.content__ball-content--three
+
+  @media only screen and (min-width: 1281px)
+    left: calc(((100% - 1110px) / 2) - 425px)
+    top: 20px
+
+  @media only screen and (max-width: 1280px) and (min-width: 761px)
+    //left: calc(((100% - 690px) / 2) - 30px)
+    left: 14px
+    top: -10px
+
+  @media only screen and (max-width: 760px)
+    //left: calc(((100% - 290px) / 2) - 25px)
+    left: -14px
+    top: -10px
+//top: -20px
+
+/*_____CONTENT-WRAPPER_____*/
+
+.content-wrapper
+  position: relative
+  margin-left: auto
+  margin-right: auto
+
+  @media only screen and (min-width: 1281px)
+    width: 1110px
+    margin-bottom: 160px
+
+  @media only screen and (max-width: 1280px) and (min-width: 761px)
+    min-width: 690px
+    max-width: calc(100% - 80px)
+    margin-bottom: 70px
+
+  @media only screen and (max-width: 760px)
+    min-width: 290px
+    max-width: calc(100% - 30px)
+    margin-bottom: 55px
+
+.content-wrapper__hamburger-button
+
+  @media only screen and (min-width: 1281px)
+    top: 38px
+    left: 0
+
+  @media only screen and (max-width: 1280px) and (min-width: 761px)
+    top: 22px
+    left: 0
+
+  @media only screen and (max-width: 760px)
+    top: 20px //15
+    left: 0
+
+//.content-wrapper__menu-name
+
+
+.content-wrapper__head-name
+
+  @media only screen and (min-width: 1281px)
+    margin-top: 105px
+    margin-bottom: 70px
+
+  @media only screen and (max-width: 1280px) and (min-width: 761px)
+    margin-top: 63px
+    margin-bottom: 40px
+
+  @media only screen and (max-width: 760px)
+    margin-top: 40px
+    margin-bottom: 25px

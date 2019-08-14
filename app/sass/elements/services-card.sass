@@ -1,0 +1,153 @@
+/*_____SERVICES-CARD_____*/
+
+.services-card
+    display: flex
+    justify-content: center
+    position: relative
+    z-index: 1000
+    align-items: center
+
+    @media only screen and (min-width: 769px)
+        flex-direction: row
+
+    @media only screen and (max-width: 768px)
+        flex-direction: column
+        
+.services-card__photo
+
+    @media only screen and (min-width: 1281px)
+        width: 575px
+    
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 344px
+
+    @media only screen and (max-width: 768px)
+        width: 290px
+
+.services-card__photo-scale
+    transition: all 0.5s linear  
+ 
+.services-card__photo-scale:hover
+    transform: scale(1.1)
+    transition: all 0.5s linear
+
+.services-card__photo-container
+    overflow: hidden
+
+.services-card__description
+    box-sizing: border-box
+
+    @media only screen and (min-width: 1281px)
+        padding: 0 90px
+        width: 575px
+
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        padding: 0 45px
+        width: 344px
+
+    @media only screen and (max-width: 768px)
+        padding: 0 15px
+        width: 290px
+    
+.services-card__name
+    font-family: "Raleway-Black"
+    text-transform: uppercase
+    padding: 0
+    font-weight: 900
+
+    @media only screen and (min-width: 1281px)
+        font-size: 40px
+        line-height: 1.5
+        margin: 21px 0 15px 0
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        font-size: 25px
+        line-height: 1.385
+        letter-spacing: 0.075em
+        margin: 21px 0 15px 0
+
+    @media only screen and (max-width: 768px)
+        font-size: 24px
+        line-height: 1.25
+        letter-spacing: 0.03em
+        margin: 21px 0 15px 0
+
+.services-card__list
+    list-style-type: none
+    text-decoration: none
+    padding: 0
+
+    @media only screen and (min-width: 769px)
+        margin: 0
+
+    @media only screen and (max-width: 768px)
+        margin: 0 0 25px 0
+
+.services-card__list-link
+    list-style-type: none
+    text-decoration: none
+    font-family: "Raleway-Regular"
+    color: rgb( 112, 98, 83 )
+    font-weight: 400
+    padding: 0
+    margin: 0
+
+    @media only screen and (min-width: 1281px)
+        font-size: 24px
+        line-height: 2
+
+    @media only screen and (max-width: 1280px)
+        font-size: 16px
+        line-height: 1.7
+
+.services-card__list-link:hover
+    color: #ad9356
+
+/*_____SERVICES-CARD--ONE_____*/
+
+.services-card__photo--one
+
+    @media only screen and (min-width: 1281px)
+        height: 580px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        height: 343px
+
+    @media only screen and (max-width: 768px)
+        height: 282px
+
+.services-card__name--one
+    color: #d9bf8b
+
+/*_____SERVICES-CARD--TWO_____*/
+
+.services-card__photo--two
+
+    @media only screen and (min-width: 1281px)
+        height: 575px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        height: 347px
+
+    @media only screen and (max-width: 768px)
+        height: 285px
+        order: -1
+
+.services-card__name--two
+    color: #b69a86
+
+/*_____SERVICES-CARD--THREE_____*/
+
+.services-card__photo--three
+
+    @media only screen and (min-width: 1281px)
+        height: 680px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        height: 392px
+
+    @media only screen and (max-width: 768px)
+        height: 328px
+
+.services-card__name--three
+    color: #9a8d8d

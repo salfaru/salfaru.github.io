@@ -1,0 +1,78 @@
+/*_____SWIPER_____*/
+
+.content-wrapper
+    
+    .worker
+
+        .swiper-container 
+
+            @media only screen and (min-width: 1281px)
+                width: 475px
+                height: 340px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                width: 100% //315px
+                height: 255px
+
+            @media only screen and (max-width: 768px)
+                width: 100% //245px
+                height: 200px
+
+        .swiper-slide
+            width: auto
+            img
+                width: auto
+
+            @media only screen and (min-width: 501px)
+                margin-right: 15px
+
+            @media only screen and (max-width: 500px)
+                margin-right: 0
+
+
+        .slider__arrow
+            position: absolute
+            outline: none
+            fill: #bfbdbd
+            cursor: pointer
+            background: none
+            margin: 0
+            padding: 0
+
+            @media only screen and (min-width: 1281px)
+                height: 28px
+                top: 210px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                height: 22px
+                top: 155px
+
+            @media only screen and (max-width: 768px)
+                height: 22px
+                top: 135px
+
+        .slider__arrow:hover
+            fill: #c3b8a3
+
+        .slider__arrow-prev
+            transform: scale(-1, 1)
+
+            @media only screen and (min-width: 1281px)
+                left: -5px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                left: -15px
+
+            @media only screen and (max-width: 768px)
+                left: -5px
+
+        .slider__arrow-next
+
+            @media only screen and (min-width: 1281px)
+                right: -5px
+
+            @media only screen and (max-width: 1280px) and (min-width: 769px)
+                right: -30px
+
+            @media only screen and (max-width: 768px)
+                right: -5px

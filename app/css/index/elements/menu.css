@@ -1,0 +1,75 @@
+/*_____MENU_HORIZONTAL_____*/
+.menu-horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (max-width: 768px) {
+    .menu-horizontal {
+      display: none; } }
+
+.menu-horizontal__items-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+
+/*_____MENU_HORIZONTAL--HEADER_____*/
+@media only screen and (min-width: 1281px) {
+  .menu-horizontal--header {
+    width: 790px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .menu-horizontal--header {
+    width: 525px; } }
+
+.menu-horizontal__items-link--header {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #333; }
+  @media only screen and (min-width: 1281px) {
+    .menu-horizontal__items-link--header {
+      font-size: 14px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .menu-horizontal__items-link--header {
+      font-size: 10px; } }
+
+.menu-horizontal__items-link--header:hover {
+  color: #ad9356; }
+
+/*_____MENU_HORIZONTAL--FOOTER_____*/
+@media only screen and (min-width: 1281px) {
+  .menu-horizontal--footer {
+    width: 660px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .menu-horizontal--footer {
+    width: 571px; } }
+
+.menu-horizontal__items-link--footer {
+  font-family: "Raleway-Bold", sans-serif;
+  color: white;
+  font-weight: bold;
+  opacity: 1; }
+  @media only screen and (min-width: 1281px) {
+    .menu-horizontal__items-link--footer {
+      font-size: 14px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .menu-horizontal__items-link--footer {
+      font-size: 12px; } }
+
+.menu-horizontal__items-link--footer:hover {
+  opacity: 0.4; }

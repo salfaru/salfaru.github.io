@@ -1,0 +1,88 @@
+/*_____CONTENT_____*/
+.content {
+  position: relative;
+  width: 100%; }
+
+.content__ball-content--one {
+  left: -webkit-calc(((100% - 1110px) / 2) - 335px);
+  left: calc(((100% - 1110px) / 2) - 335px);
+  top: 60px; }
+  @media only screen and (max-width: 1280px) {
+    .content__ball-content--one {
+      display: none; } }
+
+.content__ball-content--two {
+  left: -webkit-calc(((100% - 1110px) / 2) - 50px);
+  left: calc(((100% - 1110px) / 2) - 50px);
+  top: -10px; }
+  @media only screen and (max-width: 1280px) {
+    .content__ball-content--two {
+      display: none; } }
+
+@media only screen and (min-width: 1281px) {
+  .content__ball-content--three {
+    left: -webkit-calc(((100% - 1110px) / 2) - 425px);
+    left: calc(((100% - 1110px) / 2) - 425px);
+    top: 20px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 761px) {
+  .content__ball-content--three {
+    left: 14px;
+    top: -10px; } }
+
+@media only screen and (max-width: 760px) {
+  .content__ball-content--three {
+    left: -14px;
+    top: -10px; } }
+
+/*_____CONTENT-WRAPPER_____*/
+.content-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 1281px) {
+    .content-wrapper {
+      width: 1110px;
+      margin-bottom: 160px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 761px) {
+    .content-wrapper {
+      min-width: 690px;
+      max-width: -webkit-calc(100% - 80px);
+      max-width: calc(100% - 80px);
+      margin-bottom: 70px; } }
+  @media only screen and (max-width: 760px) {
+    .content-wrapper {
+      min-width: 290px;
+      max-width: -webkit-calc(100% - 30px);
+      max-width: calc(100% - 30px);
+      margin-bottom: 55px; } }
+
+@media only screen and (min-width: 1281px) {
+  .content-wrapper__hamburger-button {
+    top: 38px;
+    left: 0; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 761px) {
+  .content-wrapper__hamburger-button {
+    top: 22px;
+    left: 0; } }
+
+@media only screen and (max-width: 760px) {
+  .content-wrapper__hamburger-button {
+    top: 20px;
+    left: 0; } }
+
+@media only screen and (min-width: 1281px) {
+  .content-wrapper__head-name {
+    margin-top: 105px;
+    margin-bottom: 70px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 761px) {
+  .content-wrapper__head-name {
+    margin-top: 63px;
+    margin-bottom: 40px; } }
+
+@media only screen and (max-width: 760px) {
+  .content-wrapper__head-name {
+    margin-top: 40px;
+    margin-bottom: 25px; } }

@@ -1,0 +1,105 @@
+/*_____BALL_IMG_____*/
+.ball-img {
+  position: absolute;
+  z-index: 500; }
+
+.ball-img--one {
+  background-image: url("../img/index/img-pearl1.png");
+  width: 56px;
+  height: 62px; }
+
+.ball-img--two {
+  background-image: url("../img/index/img-pearl2.png");
+  width: 106px;
+  height: 109px; }
+
+.ball-img--three {
+  background-image: url("../img/index/img-pearl3.png");
+  width: 52px;
+  height: 50px; }
+
+.ball-img--four {
+  background-image: url("../img/index/img-pearl4.png");
+  width: 205px;
+  height: 209px; }
+
+/*_____BALL_CONTENT_____*/
+.ball-content {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(90%, #fdf5f4));
+  background: -webkit-linear-gradient(top, white 0%, #fdf5f4 90%);
+  background: -o-linear-gradient(top, white 0%, #fdf5f4 90%);
+  background: linear-gradient(to bottom, white 0%, #fdf5f4 90%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  z-index: 100; }
+
+.ball-content--one {
+  width: 560px;
+  height: 560px; }
+
+.ball-content--two {
+  width: 260px;
+  height: 260px; }
+
+.ball-content--three {
+  width: 160px;
+  height: 160px; }
+
+/*_____BALLS_GROUP_____*/
+.balls-group {
+  position: absolute;
+  z-index: 100; }
+
+.balls-group__ball {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(90%, #e6ddd5));
+  background: -webkit-linear-gradient(left, white 0%, #e6ddd5 90%);
+  background: -o-linear-gradient(left, white 0%, #e6ddd5 90%);
+  background: linear-gradient(to right, white 0%, #e6ddd5 90%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.balls-group__ball--one {
+  width: 415px;
+  height: 415px;
+  left: 0px;
+  top: 0px; }
+
+.balls-group__ball--two {
+  width: 92px;
+  height: 92px;
+  left: 135px;
+  top: 460px; }
+
+.balls-group__ball--three {
+  width: 54px;
+  height: 54px;
+  left: 195px;
+  top: 580px; }
+
+.balls-group__ball--four {
+  width: 32px;
+  height: 32px;
+  left: 260px;
+  top: 635px; }
+
+.balls-group__ball--five {
+  width: 24px;
+  height: 24px;
+  left: 300px;
+  top: 660px; }
+
+/*_____BALL_FOOTER_____*/
+.ball-footer {
+  position: absolute;
+  background-color: #9b9084;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  z-index: 100;
+  width: 400px;
+  height: 400px; }
+  @media only screen and (max-width: 1280px) and (min-width: 768px) {
+    .ball-footer {
+      width: 395px;
+      height: 395px; } }

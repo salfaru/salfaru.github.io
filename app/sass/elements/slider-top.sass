@@ -1,0 +1,420 @@
+/*_____SLIDER-TOP_____/ 
+
+.slider-top
+    width: 100%
+    max-width: 1920px
+    margin: 0 auto
+    position: relative
+    overflow: hidden
+    transition: background-color 2.5s ease
+
+    @media only screen and (min-width: 1281px)
+        height: 850px
+ 
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        height: calc(650px - ((1280px - 100vw) * 0.24))
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        height: 500px
+
+    @media only screen and (max-width: 620px)
+        height: calc(420px - ((320px - 100vw) * 0.35))
+
+.slider-top--pink
+    background-color: #f9eceb
+
+.slider-top--grey
+    background-color: #f3f1ed
+
+.slider-top--white
+    background-color: #ffffff
+
+.slider-top.is-fixed
+    margin-top: 150px
+
+.slider-top__menu-horizontal
+
+    @media only screen and (min-width: 1281px)
+        margin-left: 4.7vw
+        padding-top: 1.83vw
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        margin-left: 40px
+        padding-top: 20px
+
+.slider-top__social-icons
+
+    @media only screen and (min-width: 1281px)
+        left: 25px
+        top: calc(290px - ((1920px - 100vw) * 0.025))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 40px
+        top: 150px
+
+    @media only screen and (max-width: 768px)
+        left: 15px
+        top: 100px
+
+    @media only screen and (max-width: 620px)
+        left: 15px
+        top: 100px
+
+.slider-top__section-name
+
+    @media only screen and (min-width: 1281px)
+        top: calc(235px + ((1920px - 100vw) * 0.03))
+        left: calc(160px - ((1920px - 100%) * 0.01))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 100px
+        top: 125px
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        left: 70px
+        top: 97px
+
+    @media only screen and (max-width: 620px)
+        bottom: 125px
+
+.slider-top__section-name--pink
+
+    @media only screen and (max-width: 620px)
+        left: calc((100% - 217px) / 2)
+
+.slider-top__section-name--grey
+
+    @media only screen and (max-width: 620px)
+        left: calc((100% - 193px) / 2)
+
+.slider-top__section-name--white
+
+    @media only screen and (max-width: 620px)
+        left: calc((100% - 233px) / 2)
+
+.slider__button
+
+    @media only screen and (min-width: 1281px)
+        top: calc(560px - ((1920px - 100vw) * 0.12))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        top: 295px
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        top: 200px
+
+    @media only screen and (max-width: 620px)
+        left: calc((100% - 160px) / 2)
+        bottom: 50px    
+    
+.slider__button--pink
+
+    @media only screen and (min-width: 1281px)
+        left: calc(320px - ((1920px - 100%) * 0.18))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 161px
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        left: 98px
+
+.slider__button--grey
+
+    @media only screen and (min-width: 1281px)
+        left: calc(286px - ((1920px - 100%) * 0.14))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 145px
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        left: 88px
+
+.slider__button--white
+
+    @media only screen and (min-width: 1281px)
+        left: calc(343px - ((1920px - 100%) * 0.18))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        left: 175px
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        left: 108px
+
+.slider-top__wave-up
+
+    @media only screen and (min-width: 1281px)
+        bottom: -40px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        bottom: -50px
+
+    @media only screen and (max-width: 768px) and (min-width: 620px)
+        bottom: 5px
+
+    @media only screen and (max-width: 620px)
+        bottom: 75px
+
+.slider-top__wave-down
+
+    @media only screen and (min-width: 1281px)
+        bottom: -60px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        bottom: -60px
+
+    @media only screen and (max-width: 768px) and (min-width: 620px)
+        bottom: 0
+
+    @media only screen and (max-width: 620px)
+        bottom: 75px
+
+.slider-top__ball-img--one
+
+    @media only screen and (min-width: 1281px)    
+        right: 1070px
+        top: 120px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: calc(650px - ((1280px - 100vw) * 0.4))
+        top: 70px
+
+    @media only screen and (max-width: 768px)
+        right: 75%
+        top: 10%
+
+.slider-top__ball-img--two
+
+    @media only screen and (min-width: 1281px)
+        right: calc(920px - ((1920px - 100vw) * 0.3))
+        top: 620px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        right: calc(120px - ((1280px - 100vw) * 0.15))
+        top: calc(370px - ((1280px - 100vw) * 0.15))
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        right: 10%
+        top: 40%
+
+    @media only screen and (max-width: 620px)
+        right: 10%
+        top: calc(190px - ((620px - 100vw) * 0.2))
+
+.slider-top__ball-img--three
+
+    @media only screen and (min-width: 1281px)
+        right: 90px
+        top: 400px
+
+    @media only screen and (max-width: 1280px) and (min-width: 621px)
+        display: none
+
+    @media only screen and (max-width: 620px) and (min-width: 421px)
+        left: 15%
+        top: 200px
+
+    @media only screen and (max-width: 420px)
+        display: none
+
+.slider-top__ball-img--four
+
+    @media only screen and (min-width: 1281px)    
+        right: 20px
+        top: -100px
+
+    @media only screen and (max-width: 1280px)
+        display: none
+
+/*_____SLIDER-TOP__SPIRAL_____/ 
+
+.slider-top__spiral
+    position: absolute
+    top: 0
+    z-index: 100
+    background-position: right top
+    background-repeat: no-repeat
+    background-size: contain
+    transition: opacity 2.5s ease
+
+    @media only screen and (min-width: 1281px)
+        width: 1063px
+        height: 897px
+        right: calc(30px - ((1920px - 100%) * 0.4))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 744px
+        height: 100vw
+        right: calc(0px - ((1280px - 100%) * 0.45))
+
+    @media only screen and (max-width: 768px)
+        width: 500px
+        height: 400px
+        right: calc(0px - ((768px - 100%) * 0.5))
+
+.slider-top__spiral--pink
+    background-image: url("/img/index/img-spiral.png")
+
+.slider-top__spiral--grey
+    background-image: url("/img/index/img-spiral3.png")
+
+.slider-top__spiral--white
+    background-image: url("/img/index/img-spiral2.png")
+
+/*_____SLIDER-TOP__PHOTO_____/ 
+
+.slider-top__photo
+    position: absolute
+    z-index: 300
+    background-position: top, right
+    background-repeat: no-repeat
+    background-size: contain
+    transition: transform 1s ease
+    right: -50px
+
+.slider-top__photo-pink
+    background-image: url("/img/index/img-girl.png")
+    right: -50px
+    top: 0
+
+    @media only screen and (min-width: 1281px)
+        width: calc(768px - ((1920px - 100%) * 0.1))
+        height: 100%
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: calc(550px - ((1280px - 100%) * 0.35))
+        height: 100%
+
+    @media only screen and (max-width: 768px)
+        width: calc(320px - ((768px - 100%) * 0.25))
+        height: 400px
+
+.slider-top__photo-grey
+    background-image: url("/img/index/img-solarium.png")
+
+    @media only screen and (min-width: 1281px)
+        width: 768px
+        height: 80%
+        right: calc(50px - ((1920px - 100%) * 0.1))
+        top: calc(20px + ((1920px - 100vw) * 0.12))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: calc(500px - ((1280px - 100%) * 0.15))
+        height: 100%
+        right: -30px
+        top: calc(50px - ((1280px - 100vw) * 0.025))
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        width: calc(340px + ((768px - 100%) * 0.02))
+        height: 400px
+        right: calc(10px - ((768px - 100%) * 0.1))
+        top: calc(20px + ((768px - 100vw) * 0.05))
+
+    @media only screen and (max-width: 620px)
+        width: calc(340px - ((768px - 100%) * 0.3))
+        height: 400px
+        right: calc(0px + ((768px - 100%) * 0.02))
+        top: calc(15px - ((768px - 100vw) * 0.01))
+
+.slider-top__photo-white
+    background-image: url("/img/index/img-lpg.png")
+
+    @media only screen and (min-width: 1281px)
+        width: calc(550px + ((1920px - 100%) * 0.05))
+        height: 100%
+        right: 100px
+        top: calc(-90px + ((1920px - 100%) * 0.1))
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: calc(400px - ((1280px - 100%) * 0.15))
+        height: 100%
+        right: calc(10px + ((1280px - 100vw) * 0.01))
+        top: calc(10px + ((1280px - 100%) * 0.03))
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        width: calc(240px + ((768px - 100%) * 0.1))
+        height: 100%
+        right: calc(50px - ((1280px - 100vw) * 0.08))
+        top: 20px
+
+    @media only screen and (max-width: 620px)
+        width: calc(250px - ((768px - 100%) * 0.25))
+        height: 100%
+        right: calc(50px - ((1280px - 100vw) * 0.02))
+        top: 20px
+
+.slider-top__photo-pink--hide
+
+    @media only screen and (min-width: 1281px)
+        transform: translateX(700px)
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        transform: translateX(500px)
+
+    @media only screen and (max-width: 768px)
+        transform: translateX(300px)
+
+.slider-top__photo-grey--hide
+
+    @media only screen and (min-width: 1281px)
+        transform: translateX(800px)
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        transform: translateX(500px)
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        transform: translateX(400px)
+
+    @media only screen and (max-width: 620px)
+        transform: translateX(300px)
+
+.slider-top__photo-white--hide
+
+    @media only screen and (min-width: 1281px)
+        transform: translateX(800px)
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        transform: translateX(500px)
+
+    @media only screen and (max-width: 768px) and (min-width: 621px)
+        transform: translateX(400px)
+
+    @media only screen and (max-width: 620px)
+        transform: translateX(300px)
+
+/*_____SOCIAL-ICONS_____*/
+
+.social-icons
+    display: flex
+    flex-direction: column
+    position: absolute
+    z-index: 1000
+
+.social-icons-size
+    cursor: pointer
+
+    @media only screen and (min-width: 1281px)
+        width: 40px
+        height: 40px
+
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        width: 30px
+        height: 30px
+
+    @media only screen and (max-width: 768px)
+        width: 25px
+        height: 25px
+
+.social-icons__vk
+    fill: #bfa673
+
+    @media only screen and (min-width: 1281px)
+        margin-bottom: 14px
+ 
+    @media only screen and (max-width: 1280px) and (min-width: 769px)
+        margin-bottom: 7px
+
+    @media only screen and (max-width: 768px)
+        margin-bottom: 10px
+
+.social-icons__instagramm
+    fill: #bfa673

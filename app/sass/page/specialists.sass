@@ -1,0 +1,215 @@
+@import "../base"
+@import "../elements/ball"
+@import "../elements/menu"
+@import "../elements/button"
+
+@import "../elements/hamburger"
+@import "../elements/head-name"
+@import "../elements/menu-name"
+@import "../elements/page-content"
+
+
+
+.content-wrapper__discription-list
+
+    @media only screen and (min-width: 1281px)
+        margin-bottom: 30px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        margin-bottom: 30px
+
+    @media only screen and (max-width: 760px)
+        margin-bottom: 5px
+
+//.content-wrapper__list-employees
+
+/*_____DESCRIPTION-LIST_____*/
+
+.discription-list
+    font-family: "Raleway-Medium",sans-serif
+    font-weight: 600
+    color: #6a6968
+    letter-spacing: 0.01em
+
+    @media screen and (min-width: 761px)
+        font-size: 16px
+        line-height: 28px
+
+    @media screen and (max-width: 760px)
+        font-size: 14px
+        line-height: 22px
+
+/*_____LIST-EMPLOYEES_____*/
+
+.list-employees
+
+.list-employees__input
+
+.list-employees__label
+    font-size: 26px
+    font-family: "Raleway", sans-serif
+    color: rgb( 106, 105, 104 )
+    font-weight: bold
+    line-height: 1
+    display: block
+    position: relative
+    cursor: pointer
+    padding-top: 30px
+    padding-bottom: 30px
+    border-bottom: 2px solid #f4f4f4
+
+.list-employees__label-text
+    font-family: "Raleway-Bold", sans-serif
+    color: rgb( 106, 105, 104 )
+    font-weight: 700
+    line-height: 1
+    letter-spacing: 0.01em
+    position: relative
+    cursor: pointer
+    user-select: none
+
+    @media only screen and (min-width: 1281px)
+        font-size: 26px
+
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        font-size: 20px
+
+    @media only screen and (max-width: 767px)
+        font-size: 18px
+        display: block
+
+.list-employees__label-arrow
+    fill: #ddc596
+    width: 18px
+    //height: 9px
+    //position: absolute
+    display: inline-block
+    margin-left: 6px
+    position: relative
+    transform: rotate(90deg)
+
+    @media only screen and (min-width: 1281px)
+        //right: -34px
+        //bottom: 9px
+        bottom: -2px
+
+    @media only screen and (max-width: 1280px) and (min-width: 761px)
+        //right: -34px
+        //bottom: 6px
+        bottom: -2px
+
+    @media only screen and (max-width: 760px)
+        //right: 0
+        //bottom: 5px
+        bottom: -2px
+
+.list-employees__cards-wrapper
+    display: none
+
+.list-employees__input:checked ~ .list-employees__label
+
+    .list-employees__label-arrow
+        transform: rotate(90deg) scale(-1, 1)
+
+    .list-employees__cards-wrapper
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            margin-right: -30px
+
+/*_____CARD-WORKER_____*/
+
+    
+.card-worker
+    font-family: "Raleway", sans-serif
+    line-height: 1
+    position: relative
+
+    @media only screen and (min-width: 1281px)
+        height: 480px
+        width: 280px
+        margin-top: 50px
+        margin-right: 127px
+        margin-bottom: 30px
+        &:nth-child(3n)
+            margin-right: 0
+
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        height: 350px
+        width: 25%
+        margin-top: 50px
+        min-width: 240px
+
+    @media only screen and (min-width: 501px) and (max-width: 767px)
+        height: 350px
+        display: flex
+        flex-direction: column
+        width: 50%
+        margin-top: 30px
+        align-items: center
+
+    @media only screen and (max-width: 500px)
+        height: 350px
+        width: 100%
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+.card-worker__img
+
+    @media only screen and (min-width: 1281px)
+        width: 285px
+        height: 280px
+
+    @media only screen and (max-width: 1280px)
+        width: 210px
+        height: 210px
+
+.card-worker__name
+    color: rgb( 124, 111, 98 )
+    font-weight: bold
+
+    @media only screen and (min-width: 1281px)
+        font-size: 20px
+        margin: 25px 0 5px 0
+
+    @media only screen and (min-width: 768px) and (max-width: 1280px)
+        font-size: 18px
+        margin: 10px 0 0 0
+
+    @media only screen and (max-width: 767px)
+        font-size: 18px
+        margin: 10px 0 16px 0
+        width: 210px
+
+.card-worker__description
+    color: rgb( 138, 138, 138 )
+    font-weight: normal
+ 
+    @media only screen and (min-width: 1281px)
+        font-size: 20px
+
+    @media only screen and (min-width: 768px) and (max-width: 1280px)
+        font-size: 16px
+
+    @media only screen and (max-width: 767px)
+        font-size: 16px
+        width: 210px
+
+
+.card-worker__button
+    position: absolute
+    bottom: 0
+
+    @media only screen and (min-width: 1281px)
+        left: calc((280px - 180px) / 2)
+
+    @media only screen and (min-width: 768px) and (max-width: 1280px)
+        left: calc((210px - 135px) / 2)
+
+    @media only screen and (max-width: 767px)
+        left: inherit

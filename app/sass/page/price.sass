@@ -1,0 +1,351 @@
+@import "../base"
+@import "../elements/ball"
+@import "../elements/menu"
+
+@import "../elements/hamburger"
+@import "../elements/head-name"
+@import "../elements/menu-name"
+@import "../elements/page-content"
+
+
+
+
+
+.content-wrapper__price
+  position: relative
+  display: flex
+  align-items: flex-start
+  margin-top: -20px
+
+  @media only screen and (min-width: 1281px)
+    margin-bottom: 100px
+
+  @media only screen and (max-width: 1280px)
+    margin-bottom: 44px
+    margin-top: 0
+
+
+/*_____PRICE_____*/
+
+.price
+  border: 1px solid #e9e9e9
+  border-bottom: none
+
+  @media screen and (min-width: 1281px)
+    width: 350px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    width: 300px
+
+  @media only screen and (max-width: 760px)
+    width: 100%
+
+
+.price__fix-column
+  @media screen and (min-width: 1281px)
+    width: calc(100% - 380px)
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    width: calc(100% - 330px)
+
+  @media only screen and (max-width: 760px)
+    display: none
+
+
+.price__input
+  display: none
+
+.price__label
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  font-family: "Raleway", sans-serif
+  border-bottom: 1px solid #e9e9e9
+  color: #9a8d84
+  width: 100%
+  position: relative
+  cursor: pointer
+  background-color: #fff
+  transition: background-color 0.2s ease, color 0.2s ease
+
+.price__label:before
+  content: ""
+  position: absolute
+  display: block
+  background-color: #9b887b
+
+.price__label:after
+  content: ""
+  position: absolute
+  display: block
+  opacity: 1
+  background-color: #9b887b
+  transform: rotate(90deg)
+  transition: transform 0.2s ease, opacity 0.2s ease
+
+.price__content
+  display: block
+  width: 100%
+  opacity: 0
+  z-index: -99
+  pointer-events: none
+  min-height: 0
+  height: 0
+  max-height: 0
+  transition: min-height 0.2s ease, max-height 0.2s ease
+
+.price__input:checked
+  &~.price__content
+    pointer-events: all
+    opacity: 1
+    z-index: 2
+    height: inherit
+    min-height: 36px
+    max-height: 3000px
+    transition: max-height 0.2s ease, min-height 0.2s ease
+
+.price__input:checked
+  &+.price__label:after
+    transform: rotate(0deg)
+    opacity: 0
+
+
+.price__label_level1
+  font-weight: 700
+  text-transform: uppercase
+  color: #9a8d84
+  font-size: 16px
+  letter-spacing: 0.075em
+
+  @media only screen and (min-width: 761px)
+    height: 56px
+    padding: 0 30px 0 16px
+
+  @media only screen and (max-width: 760px)
+    height: 48px
+    padding: 0 26px 0 10px
+
+
+.price__label_level1:before,
+.price__label_level1:after
+  height: 2px
+  display: block
+  background-color: #9b887b
+  right: 12px
+
+  @media screen and (min-width: 1281px)
+    width: 18px
+
+  @media only screen and (max-width: 1280px)
+    width: 16px
+
+
+.price__input_level1:checked
+  &+.price__label_level1
+    background-color: #ded3bc
+    color: #fff
+  &+.price__label_level1:before,
+  &+.price__label_level1:after
+    background-color: #fff
+
+
+.price__label_level2
+  font-weight: 400
+  letter-spacing: 0.075em
+
+  @media screen and (min-width: 1281px)
+    padding: 10px 12px 10px 42px
+    font-size: 16px
+    line-height: 24px
+    min-height: 44px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    padding: 10px 12px 10px 36px
+    font-size: 14px
+    line-height: 20px
+    min-height: 44px
+
+  @media only screen and (max-width: 760px)
+    padding: 10px 32px 10px 10px
+    font-size: 14px
+    line-height: 22px
+    min-height: 40px
+
+
+.price__label_level2:before,
+.price__label_level2:after
+  height: 1px
+  display: block
+  top: 20px
+
+  @media screen and (min-width: 1281px)
+    width: 14px
+    left: 16px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    width: 12px
+    left: 14px
+
+  @media only screen and (max-width: 760px)
+    width: 12px
+    right: 10px
+
+.price__label_level3
+  min-height: 36px
+  font-weight: 500
+  font-size: 14px
+  line-height: 22px
+  color: #847165
+
+  @media screen and (min-width: 1281px)
+    padding: 5px 12px 5px 42px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    padding: 5px 12px 5px 36px
+
+  @media only screen and (max-width: 760px)
+    padding: 5px 10px
+
+.price__label_level3:hover
+  background-color: #fef7f7
+
+.price__label_level3:before,
+.price__label_level3:after
+  display: none
+
+.price__content_level3
+  transition: none
+  height: inherit
+  max-height: inherit
+
+  @media screen and (min-width: 1281px)
+    //border: 1px solid #e9e9e9
+    //border-bottom: none
+    width: calc(100% - 380px)
+    top: 0
+    left: 380px
+    position: absolute
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    //border: 1px solid #e9e9e9
+    //border-bottom: none
+    width: calc(100% - 330px)
+    top: 0
+    left: 330px
+    position: absolute
+
+  @media only screen and (max-width: 760px)
+    width: 100%
+    position: relative
+
+
+.price__input_level3:checked
+  &+.price__label_level3
+    background-color: #fef7f7
+
+.price__content-head
+  border: 1px solid #e9e9e9
+  background-color: #fff
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+  @media screen and (min-width: 1281px)
+    padding: 26px 20px 0 20px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    padding: 16px 15px 0 15px
+
+  @media only screen and (max-width: 760px)
+    display: none
+
+
+.price__content-title
+  font-family: "Raleway", sans-serif
+  font-weight: 500
+  width: 100%
+  color: #b5a69c
+  letter-spacing: 0.075em
+  text-align: center
+  margin-top: 0
+
+  @media screen and (min-width: 1281px)
+    font-size: 20px
+    line-height: 28px
+    margin-bottom: 40px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 20px
+
+  @media only screen and (max-width: 760px)
+    display: none
+
+
+.price__content-subtitle
+  font-family: "Raleway", sans-serif
+  font-weight: 400
+  color: #b5b0ad
+  line-height: 30px
+  font-size: 13px
+
+.price__content-row
+  box-sizing: border-box
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  color: #40342b
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: 1px solid #e9e9e9
+  border-top: none
+
+  @media screen and (min-width: 1281px)
+    min-height: 44px
+    font-size: 16px
+    line-height: 24px
+    padding: 10px 20px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    min-height: 36px
+    font-size: 14px
+    line-height: 20px
+    padding: 8px 15px
+
+  @media only screen and (max-width: 760px)
+    min-height: 36px
+    font-size: 14px
+    line-height: 20px
+    padding: 8px 15px
+
+
+.price__no-checked-service
+  position: absolute
+  font-family: "Raleway", sans-serif
+  font-weight: 500
+  line-height: 28px
+  color: #b5a69c
+  letter-spacing: 0.075em
+  text-align: center
+
+  @media screen and (min-width: 1281px)
+    width: calc(100% - 380px)
+    left: 380px
+    font-size: 20px
+    top: 26px
+
+  @media only screen and (min-width: 761px) and (max-width: 1280px)
+    width: calc(100% - 330px)
+    left: 330px
+    font-size: 16px
+    top: 16px
+
+  @media only screen and (max-width: 760px)
+    display: none
+
+
+.price__cost
+  white-space: nowrap
+  margin-left: 30px

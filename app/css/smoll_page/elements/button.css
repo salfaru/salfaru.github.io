@@ -1,0 +1,69 @@
+/*_____BUTTON_____*/
+.button {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(#eadbbf), color-stop(50%, #fffefe), to(#eadbbf));
+  background: -webkit-linear-gradient(right, #eadbbf 0%, #fffefe 50%, #eadbbf 100%);
+  background: -o-linear-gradient(right, #eadbbf 0%, #fffefe 50%, #eadbbf 100%);
+  background: linear-gradient(to left, #eadbbf 0%, #fffefe 50%, #eadbbf 100%);
+  z-index: 2000;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  border: none; }
+
+.button__text {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Lato-Bold", sans-serif;
+  color: #716354;
+  text-decoration: none; }
+
+/*_____BUTTON--SMOLL_____*/
+@media only screen and (min-width: 1281px) {
+  .button--small {
+    width: 180px;
+    height: 54px; } }
+
+@media only screen and (max-width: 1280px) {
+  .button--small {
+    width: 135px;
+    height: 40px; } }
+
+.button__text--small {
+  line-height: 1; }
+  @media only screen and (min-width: 1281px) {
+    .button__text--small {
+      font-size: 14px; } }
+  @media only screen and (max-width: 1280px) {
+    .button__text--small {
+      font-size: 12px; } }
+
+/*_____BUTTON--CONTACTS_____*/
+.button_form {
+  letter-spacing: 0.05em;
+  color: #7d7165;
+  margin: 0 auto; }
+  @media only screen and (min-width: 761px) {
+    .button_form {
+      width: 182px;
+      height: 54px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 760px) {
+    .button_form {
+      width: 134px;
+      height: 40px;
+      font-size: 12px; } }

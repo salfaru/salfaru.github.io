@@ -1,0 +1,145 @@
+/*_____HAMBURGER-BUTTON_____/ */
+.hamburger-button {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  left: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2500; }
+  @media only screen and (min-width: 769px) {
+    .hamburger-button {
+      display: none; } }
+  @media only screen and (max-width: 768px) and (min-width: 561px) {
+    .hamburger-button {
+      top: 85px; } }
+  @media only screen and (max-width: 560px) {
+    .hamburger-button {
+      top: 70px; } }
+
+.hamburger-button__line {
+  width: 100%;
+  height: 2px;
+  background-color: #a38c76;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+  @media only screen and (max-width: 768px) and (min-width: 561px) {
+    .hamburger-button__line {
+      background-color: #a38c76; } }
+  @media only screen and (max-width: 560px) {
+    .hamburger-button__line {
+      background-color: #4f4f4f; } }
+
+/*_____HAMBURGER-BUTTON-ACTIVE_____/ */
+.hamburger-button__line-up--active {
+  -webkit-transform: translate(0, 9px) rotate(45deg);
+      -ms-transform: translate(0, 9px) rotate(45deg);
+          transform: translate(0, 9px) rotate(45deg); }
+
+.hamburger-button__line-mid--active {
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0); }
+
+.hamburger-button__line-down--active {
+  -webkit-transform: translate(0, -9px) rotate(-45deg);
+      -ms-transform: translate(0, -9px) rotate(-45deg);
+          transform: translate(0, -9px) rotate(-45deg); }
+
+/*_____HAMBURGER-MENU_____/ */
+.hamburger-menu {
+  position: fixed;
+  overflow: hidden;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2400;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+
+.hamburger-menu--active {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%); }
+
+.hamburger-menu__item--wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5vh 0 0 0;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 65px 65px 15px 65px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.hamburger-menu--active .hamburger-menu__item--wrapper {
+  position: relative; }
+  .hamburger-menu--active .hamburger-menu__item--wrapper:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: 1;
+    right: -160px;
+    top: -webkit-calc(5vh + 105px);
+    top: calc(5vh + 105px);
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #ecc0b629; }
+
+.hamburger-menu__item {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 4vh;
+  margin-top: 10px;
+  padding-left: 20px;
+  z-index: 2; }
+  .hamburger-menu__item:last-child {
+    margin-bottom: 0; }
+
+.hamburger-menu__item--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway-Bold",sans-serif;
+  color: #564e4e;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 0.1em; }

@@ -1,0 +1,203 @@
+/*_____BALL_____*/
+.ball {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+/*_____BALL_IMG_____*/
+.ball-img--one {
+  background-image: url("/img/index/img-pearl1.png");
+  z-index: 500; }
+  @media only screen and (min-width: 1281px) {
+    .ball-img--one {
+      width: 56px;
+      height: 62px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .ball-img--one {
+      width: 45px;
+      height: 45px; } }
+  @media only screen and (max-width: 768px) {
+    .ball-img--one {
+      width: 20px;
+      height: 20px; } }
+
+.ball-img--two {
+  background-image: url("/img/index/img-pearl2.png");
+  z-index: 500; }
+  @media only screen and (min-width: 1281px) {
+    .ball-img--two {
+      width: 86px;
+      height: 89px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .ball-img--two {
+      width: 45px;
+      height: 45px; } }
+  @media only screen and (max-width: 768px) {
+    .ball-img--two {
+      width: 20px;
+      height: 20px; } }
+
+.ball-img--three {
+  background-image: url("/img/index/img-pearl3.png");
+  z-index: 500; }
+  @media only screen and (min-width: 1281px) {
+    .ball-img--three {
+      width: 52px;
+      height: 52px; } }
+  @media only screen and (max-width: 620px) {
+    .ball-img--three {
+      width: 30px;
+      height: 30px; } }
+
+.ball-img--four {
+  background-image: url("/img/index/img-pearl4.png");
+  width: 205px;
+  height: 205px;
+  z-index: 100; }
+
+/*_____BALL_CONTENT_____*/
+.ball-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(90%, #fdf5f4));
+  background: -webkit-linear-gradient(top, white 0%, #fdf5f4 90%);
+  background: -o-linear-gradient(top, white 0%, #fdf5f4 90%);
+  background: linear-gradient(to bottom, white 0%, #fdf5f4 90%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+@media only screen and (min-width: 1281px) {
+  .ball-content--one {
+    width: 560px;
+    height: 560px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .ball-content--one {
+    width: 448px;
+    height: 448px; } }
+
+@media only screen and (max-width: 768px) {
+  .ball-content--one {
+    width: 100px;
+    height: 100px; } }
+
+@media only screen and (min-width: 1281px) {
+  .ball-content--two {
+    width: 260px;
+    height: 260px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .ball-content--two {
+    width: 208px;
+    height: 208px; } }
+
+@media only screen and (max-width: 768px) {
+  .ball-content--two {
+    width: 40px;
+    height: 40px; } }
+
+@media only screen and (min-width: 1281px) {
+  .ball-content--three {
+    width: 160px;
+    height: 160px; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .ball-content--three {
+    width: 128px;
+    height: 128px; } }
+
+@media only screen and (max-width: 768px) {
+  .ball-content--three {
+    width: 25px;
+    height: 25px; } }
+
+/*_____BALLS_GROUP_____*/
+.balls-group__ball {
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(90%, #e6ddd5));
+  background: -webkit-linear-gradient(left, white 0%, #e6ddd5 90%);
+  background: -o-linear-gradient(left, white 0%, #e6ddd5 90%);
+  background: linear-gradient(to right, white 0%, #e6ddd5 90%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.balls-group__ball--one {
+  left: 0;
+  top: 0; }
+  @media only screen and (min-width: 1281px) {
+    .balls-group__ball--one {
+      width: 415px;
+      height: 415px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .balls-group__ball--one {
+      width: 332px;
+      height: 332px; } }
+
+.balls-group__ball--two {
+  left: 135px; }
+  @media only screen and (min-width: 1281px) {
+    .balls-group__ball--two {
+      width: 92px;
+      height: 92px;
+      top: 460px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .balls-group__ball--two {
+      width: 73px;
+      height: 73px;
+      top: 368px; } }
+
+.balls-group__ball--three {
+  left: 195px; }
+  @media only screen and (min-width: 1281px) {
+    .balls-group__ball--three {
+      width: 54px;
+      height: 54px;
+      top: 580px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .balls-group__ball--three {
+      width: 43px;
+      height: 43px;
+      top: 464px; } }
+
+.balls-group__ball--four {
+  left: 260px; }
+  @media only screen and (min-width: 1281px) {
+    .balls-group__ball--four {
+      width: 32px;
+      height: 32px;
+      top: 635px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .balls-group__ball--four {
+      width: 25px;
+      height: 25px;
+      top: 508px; } }
+
+.balls-group__ball--five {
+  left: 300px; }
+  @media only screen and (min-width: 1281px) {
+    .balls-group__ball--five {
+      width: 24px;
+      height: 24px;
+      top: 660px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .balls-group__ball--five {
+      width: 19px;
+      height: 19px;
+      top: 528px; } }
+
+/*_____BALL_FOOTER_____*/
+.ball-footer {
+  background-color: #9b9084;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  @media only screen and (min-width: 1281px) {
+    .ball-footer {
+      width: 400px;
+      height: 400px; } }
+  @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .ball-footer {
+      width: 395px;
+      height: 395px; } }
+  @media only screen and (max-width: 768px) {
+    .ball-footer {
+      width: 340px;
+      height: 340px; } }
