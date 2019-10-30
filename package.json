@@ -13,7 +13,7 @@
     "swiper": "^4.5.0"
   },
   "devDependencies": {
-    "bower": "^1.8.4",
+    "bower": "^1.8.8",
     "browser-sync": "^2.24.4",
     "check-update": "0.0.8",
     "del": "^3.0.0",
