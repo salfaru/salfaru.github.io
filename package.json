@@ -9,7 +9,7 @@
   "author": "Fenix",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "swiper": "^4.5.0"
   },
   "devDependencies": {
