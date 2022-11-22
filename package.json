@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "bower": "^1.8.4",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.27.10",
     "check-update": "0.0.8",
     "del": "^3.0.0",
     "gulp-autoprefixer": "^5.0.0",
